@@ -102,7 +102,7 @@ h1 {
     font-size: 1.8em;
     font-weight: 700;
     color: #7bdff2;
-    margin: 0.5em 0;
+    margin: 1rem 0.5rem;
     flex-grow: 1;
 }
 
@@ -135,12 +135,12 @@ h3 {
 
 #dropdown ul {
     width: 100%;
-    margin: 0.5em 0;
+    margin: 1em 0;
     display: flex;
     flex-direction: column;
 }
 
-#dropdown li {
+#dropdown a {
     text-align: center;
     padding: 1.5rem 4rem;
     margin: 0 2rem;
@@ -150,12 +150,12 @@ h3 {
     border-radius: 0.3rem;
 }
 
-#dropdown li:last-child{
+#dropdown a:last-of-type{
     border-bottom: none;
     padding: 1.5rem 4rem 1rem;
 }
 
-#dropdown li:hover {
+#dropdown a:hover {
     cursor: pointer;
 }
 
@@ -179,7 +179,7 @@ main section {
     box-shadow: lightgrey 0 0 0.5em 0.01em;
 }
 
-main section:last-child {
+main section:last-of-type {
     margin: 1.5em 0.5em 0.5em;
 }
 
@@ -188,12 +188,41 @@ main section li {
     margin: 0 0 0.5em 1.1em;
 }
 
-main section li:last-child {
+main section li:last-of-type {
     margin: 0 0 0 1.1em;
 }
 
-#dropdown li.active {
+#dropdown a.active {
    color: #1982c4;
+}
+
+.question {
+    box-shadow: none;
+    border-radius: 0;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.download a {
+    padding: 1em 2em;
+    margin: 0.5em;
+    display: block;
+    border: 1px solid lightgrey;
+    border-radius: 100em;
+    transition: all 0.4s ease;
+}
+
+.download a:hover {
+    cursor: pointer;
+    background-color: rgb(243, 243, 243);
+    transition: all 0.4s ease;
 }
 
 @media (min-width: 520px) {
@@ -236,7 +265,7 @@ main section li:last-child {
         justify-content: space-evenly;
     }
 
-    #dropdown li {
+    #dropdown a {
         margin: 0;
         padding: 0.5em 1em;
         border-radius: 0.3em;
@@ -245,31 +274,31 @@ main section li:last-child {
         transition: all 0.4s ease;
     }
 
-    #dropdown li:last-child {
+    #dropdown a:last-of-type {
         padding: 0.5em 1em;
     }
 
-    #dropdown li.active {
+    #dropdown a.active {
         background-color: #1982c4;
         color: white;
     }
 
-    #dropdown li:hover {
+    #dropdown a:hover {
         background-color: rgb(243, 243, 243);
         transition: all 0.4s ease;
     }
 
-    #dropdown li.active:hover {
+    #dropdown a.active:hover {
         background-color: #2194db;
         color: white;
     }
 
-    #dropdown li:active {
+    #dropdown a:active {
         background-color: rgb(226, 226, 226);
         transition: all 0.4s ease;
     }
 
-    #dropdown li.active:active /* ;) */ {
+    #dropdown a.active:active /* ;) */ {
         background-color: #1a7fbe;
         color: white;
     }
