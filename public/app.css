@@ -179,6 +179,10 @@ main section {
     box-shadow: lightgrey 0 0 0.5em 0.01em;
 }
 
+main section:last-child {
+    margin: 1.5em 0.5em 0.5em;
+}
+
 main section li {
     list-style-type: disc;
     margin: 0 0 0.5em 1.1em;
@@ -277,7 +281,7 @@ main section li:last-child {
 
     main section {
         flex-grow: 1;
-        margin: 0.5em 0;
+        margin: 0.5em 0 !important;
     }
 
     main p {
