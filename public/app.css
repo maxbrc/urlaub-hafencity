@@ -1,0 +1,293 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of CSS reset */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Geist", sans-serif;
+    min-height: 100dvh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+b {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main img {
+    width: 100%;
+    border-radius: 0.3em;
+}
+
+header {
+    margin: 0 0 1em 0;
+    padding: 0.5em 1em;
+    box-shadow: grey 0 0 0.5em 0.01em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+header section {
+    flex-grow: 1;
+}
+
+#dropdownImg {
+    width: auto;
+    height: 2.5em;
+    transition: all 0.2s ease;
+}
+
+h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #7bdff2;
+    margin: 0.5em 0;
+    flex-grow: 1;
+}
+
+h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 0 0 1.5rem 0.5rem;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+}
+
+.rotated {
+    transform: rotateZ(90deg);
+    transition: all 0.2s ease;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#dropdown {
+    flex-basis: 100%;
+    border-top: 1px solid lightgrey;
+    margin: 0.5em 0 0 0;
+}
+
+#dropdown ul {
+    width: 100%;
+    margin: 0.5em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#dropdown li {
+    text-align: center;
+    padding: 1.5rem 4rem;
+    margin: 0 2rem;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-bottom: 1px solid lightgrey;
+    border-radius: 0.3rem;
+}
+
+#dropdown li:last-child{
+    border-bottom: none;
+    padding: 1.5rem 4rem 1rem;
+}
+
+#dropdown li:hover {
+    cursor: pointer;
+}
+
+main {
+    padding: 0.5em;
+    max-width: 1300px;
+    align-self: center;
+}
+
+main p {
+    letter-spacing: 0.03rem;
+    margin: 1rem 0.5rem;
+    font-size: 1.1em;
+    line-height: 1.2rem;
+}
+
+main section {
+    margin: 1.5em 0.5em;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: lightgrey 0 0 0.5em 0.01em;
+}
+
+main section li {
+    list-style-type: disc;
+    margin: 0 0 0.5em 1.1em;
+}
+
+main section li:last-child {
+    margin: 0 0 0 1.1em;
+}
+
+#dropdown li.active {
+   color: #1982c4;
+}
+
+@media (min-width: 520px) {
+    main img {
+        height: 20em;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        flex-basis: 50%;
+    }
+
+    h2 {
+        font-size: 1.75em;
+        margin: 0 0 1.5rem 0;
+    }
+
+    header {
+        flex-wrap: nowrap;
+    }
+
+    #dropdownImg {
+        display: none;
+    }
+
+    #dropdown {
+        display: block !important;
+        border-top: none;
+        flex-basis: 50%;
+        flex-shrink: 1;
+        margin: 0;
+    }
+
+    #dropdown ul {
+        flex-direction: row;
+        width: auto;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #dropdown li {
+        margin: 0;
+        padding: 0.5em 1em;
+        border-radius: 0.3em;
+        border-bottom: none;
+        color: grey;
+        transition: all 0.4s ease;
+    }
+
+    #dropdown li:last-child {
+        padding: 0.5em 1em;
+    }
+
+    #dropdown li.active {
+        background-color: #1982c4;
+        color: white;
+    }
+
+    #dropdown li:hover {
+        background-color: rgb(243, 243, 243);
+        transition: all 0.4s ease;
+    }
+
+    #dropdown li.active:hover {
+        background-color: #2194db;
+        color: white;
+    }
+
+    #dropdown li:active {
+        background-color: rgb(226, 226, 226);
+        transition: all 0.4s ease;
+    }
+
+    #dropdown li.active:active /* ;) */ {
+        background-color: #1a7fbe;
+        color: white;
+    }
+
+    .features {
+        display: flex;
+        gap: 1em;
+    }
+
+    main section {
+        flex-grow: 1;
+        margin: 0.5em 0;
+    }
+
+    main p {
+        margin: 1em 0;
+    }
+}
+
+@media (min-width: 1300px) {
+    #dropdown {
+        flex-basis: 40%;
+        max-width: 800px;
+    }
+}
