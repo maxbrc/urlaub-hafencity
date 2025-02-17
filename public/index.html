@@ -15,6 +15,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="app.css" />
+		<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 	</head>
 	<body>
 		<noscript>
@@ -24,7 +25,7 @@
 		</noscript>
 		<header>
 			<h1>Urlaub Hafencity</h1>
-			<img src="img/dropdown.png" id="dropdownImg" alt="Hauptmenü" />
+			<img src="assets/dropdown.png" id="dropdownImg" alt="Hauptmenü" />
 			<nav class="hidden" id="dropdown">
 				<ul>
 					<a class="active"><li>Home</li></a>
@@ -36,13 +37,13 @@
 			</nav>
 		</header>
 		<main>
-			<h2>Willkommen in unserem Hafencity Apartment</h2>
-			<img src="img/main.jpg" alt="Bild der Wohnung von Innen" />
-			<p>
-				Genießen Sie Ihren Aufenthalt in unserem gemütlichen Apartment im Herzen
-				der Hafencity. Perfekt gelegen für Geschäftsreisende und Touristen
-				gleichermaßen.
-			</p>
+			<div class="imgWrapper">
+				<img src="assets/main.jpg" alt="Bild der Wohnung von Innen" />
+				<div class="overlayText">
+					<h2>Ihre Ferienwohnung in der Hafencity</h2>
+					<p>Erleben sie die Dresdner Innenstadt von ihrer schönsten Seite in unserem stilvolen Apartment.</p>
+				</div>
+			</div>
 			<div class="features">
 				<section>
 					<h3>Ausstattung</h3>
@@ -63,7 +64,7 @@
 				</section>
 			</div>
 			<div class="booking">
-				<img src="img/booking.png" alt="Symbolbild Buchung" />
+				<img src="assets/booking.png" alt="Symbolbild Buchung" />
 				<a href="https://www.booking.com/Share-Zs3JL0" target="_blank">
 					Booking.com
 				</a>

@@ -59,9 +59,9 @@ html {
 }
 
 body {
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
-    min-height: 100dvh;
 }
 
 b {
@@ -75,11 +75,33 @@ a {
 
 main img {
     width: 100%;
-    border-radius: 0.3em;
+}
+
+.imgWrapper {
+    height: 70dvh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgWrapper img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.overlayText {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0 4rem 0 1rem;
+    color: white;
 }
 
 header {
-    margin: 0 0 1em 0;
     padding: 0.5em 1em;
     box-shadow: grey 0 0 0.5em 0.01em;
     display: flex;
@@ -94,22 +116,22 @@ header section {
 
 #dropdownImg {
     width: auto;
-    height: 2.5em;
+    height: 2em;
     transition: all 0.2s ease;
 }
 
 h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 700;
-    color: #7bdff2;
-    margin: 1rem 0.5rem;
+    color: #0d9488;
+    margin: 0.5rem 0;
     flex-grow: 1;
 }
 
 h2 {
-    font-size: 1.4em;
+    font-size: 2em;
     font-weight: 600;
-    margin: 0 0 1.5rem 0.5rem;
+    margin: 0 0 1rem 0;
 }
 
 h3 {
@@ -139,19 +161,25 @@ main > h3 {
 
 #dropdown ul {
     width: 100%;
-    margin: 1em 0;
+    margin: 0.5em 0;
     display: flex;
     flex-direction: column;
 }
 
 #dropdown a {
     text-align: center;
-    padding: 1.5rem 4rem;
-    margin: 0 2rem;
+    color: rgb(68, 64, 60);
+    padding: 1.25rem 2rem;
+    margin: 0 3rem;
     font-size: 1.1em;
     font-weight: 600;
     border-bottom: 1px solid lightgrey;
     border-radius: 0.3rem;
+}
+
+#dropdown li {
+    display: inline-block;
+    padding: 0.1em;
 }
 
 #dropdown a:last-of-type{
@@ -163,17 +191,10 @@ main > h3 {
     cursor: pointer;
 }
 
-main {
-    padding: 0.5em;
-    max-width: 1300px;
-    align-self: center;
-}
-
 main p {
     letter-spacing: 0.03rem;
-    margin: 1rem 0.5rem;
     font-size: 1.1em;
-    line-height: 1.2rem;
+    line-height: 1.4rem;
 }
 
 main section {
@@ -197,7 +218,11 @@ main section li:last-of-type {
 }
 
 #dropdown a.active {
-   color: #1982c4;
+   color: #0d9488;
+}
+
+#dropdown a.active li {
+    border-bottom: 2px solid #0d9488;
 }
 
 .question {
@@ -255,14 +280,7 @@ main section li:last-of-type {
     font-weight: 600;
 }
 
-@media (min-width: 520px) {
-    main > img {
-        height: 20em;
-        object-fit: cover;
-    }
-}
-
-@media (min-width: 1000px) {
+ @media (min-width: 1000px) {
     h1 {
         flex-basis: 50%;
     }
@@ -306,11 +324,6 @@ main section li:last-of-type {
 
     #dropdown a:last-of-type {
         padding: 0.5em 1em;
-    }
-
-    #dropdown a.active {
-        background-color: #1982c4;
-        color: white;
     }
 
     #dropdown a:hover {
