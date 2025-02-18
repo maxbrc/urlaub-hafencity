@@ -137,11 +137,7 @@ h2 {
 h3 {
     font-size: 1.2em;
     font-weight: 600;
-    margin: 0 0 0.5rem 0;
-}
-
-main > h3 {
-    margin: 0 0.5em;
+    margin: 0 0 1rem 0;
 }
 
 .rotated {
@@ -191,30 +187,43 @@ main > h3 {
     cursor: pointer;
 }
 
-main p {
+.imgWrapper p {
     letter-spacing: 0.03rem;
     font-size: 1.1em;
     line-height: 1.4rem;
 }
 
 main section {
-    margin: 1.5em 0.5em;
-    padding: 1em;
+    margin: 1.5em 0;
+    padding: 1.5em;
     border-radius: 0.5em;
-    box-shadow: lightgrey 0 0 0.5em 0.01em;
+    box-shadow: lightgrey 0 0.1em 0.5em 0.01em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 
 main section:last-of-type {
-    margin: 1.5em 0.5em 0.5em;
+    margin: 1.5em 0 0;
 }
 
-main section li {
-    list-style-type: disc;
-    margin: 0 0 0.5em 1.1em;
+.features {
+    margin: 0 0 2em;
+    padding: 1em;
 }
 
-main section li:last-of-type {
-    margin: 0 0 0 1.1em;
+.features svg {
+    height: 3em;
+    margin: 0 0 1em;
+}
+
+.features p {
+    text-align: center;
+    color: rgb(50, 50, 50);
+    font-size: 1.05em;
+    line-height: 1.4rem;
 }
 
 #dropdown a.active {
@@ -260,27 +269,47 @@ main section li:last-of-type {
 }
 
 .booking {
-    display: flex;
-    align-items: center;
-    background-color: #003b95;
-    height: 4em;
-    margin: 1.5em 0.5em;
-    border-radius: 0.3em;
-    justify-content: center;
-    gap: 1em;
-}
-
-.booking img {
-    width: 2.5em;
-}
-
-.booking a {
+    display: inline-block;
     color: white;
+    padding: 1rem 1.5rem;
     font-size: 1.2em;
     font-weight: 600;
+    background-color: #003b95;
+    margin: 1.5rem 0 0;
+    border-radius: 100em;
 }
 
- @media (min-width: 1000px) {
+.reviews {
+    padding: 3em 1em;
+    text-align: left;
+    background-color: #0d9488;
+    color: white;
+}
+
+.reviews h2 {
+    margin: 0 0 1em;
+}
+
+.reviews section {
+    align-items: stretch;
+    background-color: white;
+    box-shadow: none;
+}
+
+blockquote {
+    color: rgb(80, 80, 80);
+    font-style: italic;
+}
+
+address {
+    color: rgb(50, 50, 50);
+    letter-spacing: 0.01rem;
+    font-weight: 600;
+    margin: 1rem 0 0;
+    font-size: 1.05rem;
+}
+
+@media (min-width: 1000px) {
     h1 {
         flex-basis: 50%;
     }

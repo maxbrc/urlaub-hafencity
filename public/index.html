@@ -1,75 +1,122 @@
 <!DOCTYPE html>
 <html lang="de">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="Urlaub in der Hafencity Dresden. Informationen zum Apartment."
-		/>
-		<title>Urlaub Hafencity</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="app.css" />
-		<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-	</head>
-	<body>
-		<noscript>
-			Bitte aktivieren Sie JavaScript. Kommt diese Nachricht unerwartet, laden
-			Sie die Seite neu oder überprüfen Sie ihre Internetverbindung. Bei Fragen
-			und Problemen können Sie sich direkt an uns wenden.
-		</noscript>
-		<header>
-			<h1>Urlaub Hafencity</h1>
-			<img src="assets/dropdown.png" id="dropdownImg" alt="Hauptmenü" />
-			<nav class="hidden" id="dropdown">
-				<ul>
-					<a class="active"><li>Home</li></a>
-					<a href="lage/"><li>Lage</li></a>
-					<a href="dokumente/"><li>Dokumente</li></a>
-					<a href="faq/"><li>FAQ</li></a>
-					<a href="kontakt/"><li>Kontakt</li></a>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<div class="imgWrapper">
-				<img src="assets/main.jpg" alt="Bild der Wohnung von Innen" />
-				<div class="overlayText">
-					<h2>Ihre Ferienwohnung in der Hafencity</h2>
-					<p>Erleben sie die Dresdner Innenstadt von ihrer schönsten Seite in unserem stilvolen Apartment.</p>
-				</div>
-			</div>
-			<div class="features">
-				<section>
-					<h3>Ausstattung</h3>
-					<ul>
-						<li>Voll ausgestatte Küche</li>
-						<li>Kostenfreies WLAN</li>
-						<li>Flachbild Fernseher</li>
-						<li>Dusche</li>
-					</ul>
-				</section>
-				<section>
-					<h3>In der Nähe</h3>
-					<ul>
-						<li>Citybeach 350m</li>
-						<li>Zwinger, Fürstenzug und weitere barocke Bauten &lt2km</li>
-						<li>Bahnhof Dresden-Neustadt 700m</li>
-					</ul>
-				</section>
-			</div>
-			<div class="booking">
-				<img src="assets/booking.png" alt="Symbolbild Buchung" />
-				<a href="https://www.booking.com/Share-Zs3JL0" target="_blank">
-					Booking.com
-				</a>
-			</div>
-		</main>
-		<script src="app.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Urlaub in der Hafencity Dresden. Informationen zum Apartment."
+    />
+    <title>Urlaub Hafencity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  </head>
+  <body>
+    <noscript>
+      Bitte aktivieren Sie JavaScript. Kommt diese Nachricht unerwartet, laden
+      Sie die Seite neu oder überprüfen Sie ihre Internetverbindung. Bei Fragen
+      und Problemen können Sie sich direkt an uns wenden.
+    </noscript>
+    <header>
+      <h1>Urlaub Hafencity</h1>
+      <img src="assets/dropdown.png" id="dropdownImg" alt="Hauptmenü" />
+      <nav class="hidden" id="dropdown">
+        <ul>
+          <a class="active"><li>Home</li></a>
+          <a href="lage/"><li>Lage</li></a>
+          <a href="dokumente/"><li>Dokumente</li></a>
+          <a href="faq/"><li>FAQ</li></a>
+          <a href="kontakt/"><li>Kontakt</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="imgWrapper">
+        <img src="assets/main.jpg" alt="Bild der Wohnung von Innen" />
+        <div class="overlayText">
+          <h2>Ihre Ferienwohnung in der Hafencity</h2>
+          <p>
+            Erleben sie die Dresdner Innenstadt von ihrer schönsten Seite in
+            unserem stilvolen Apartment.
+          </p>
+			<a class="booking" href="https://www.booking.com/Share-Zs3JL0" target="_blank">
+			  Jetzt buchen
+			</a>
+        </div>
+      </div>
+      <div class="features">
+		<section>
+			<svg
+			  xmlns="http://www.w3.org/2000/svg"
+			  width="100%"
+			  height="100%"
+			  viewBox="0 0 24 24"
+			>
+			  <g fill="none" stroke="#0d9488" stroke-width="1.5">
+				<path stroke-linecap="round" d="M19 20v-1.5M5 20v-1.5" />
+				<path
+				  d="M2 15c0-.932 0-1.398.152-1.765a2 2 0 0 1 1.083-1.083C3.602 12 4.068 12 5 12h14c.932 0 1.398 0 1.765.152a2 2 0 0 1 1.083 1.083C22 13.602 22 14.068 22 15c0 .932 0 1.398-.152 1.765a2 2 0 0 1-1.083 1.083C20.398 18 19.932 18 19 18H5c-.932 0-1.398 0-1.765-.152a2 2 0 0 1-1.083-1.083C2 16.398 2 15.932 2 15Zm19-3c0-3.771 0-5.657-1.172-6.828C18.657 4 16.771 4 13 4h-2C7.229 4 5.343 4 4.172 5.172C3 6.343 3 8.229 3 12"
+				/>
+				<path
+				  d="M18.5 12v-1.5c0-1.886 0-2.828-.586-3.414C17.328 6.5 16.386 6.5 14.5 6.5h-5c-1.886 0-2.828 0-3.414.586C5.5 7.672 5.5 8.614 5.5 10.5V12M12 7v5"
+				/>
+			  </g>
+			</svg>
+			<h3>Voll Ausgestattet</h3>
+			<p>
+			  Mit einer voll ausgetatteten Küche, einem Fernseher, kostenfreiem
+			  WLAN, einer Dusche und vielem Mehr sind sie perfekt ausgetattet
+			</p>
+		  </section>
+        <section>
+          <svg width="100%" height="100%" viewBox="0 0 24 24">
+            <path
+              fill="#0d9488"
+              d="M12 3a7 7 0 0 0-7 7c0 2.862 1.782 5.623 3.738 7.762A26.158 26.158 0 0 0 12 20.758a26.14 26.14 0 0 0 3.262-2.994C17.218 15.623 19 12.863 19 10a7 7 0 0 0-7-7Zm0 20.214l-.567-.39l-.003-.002l-.006-.005l-.02-.014l-.075-.053a25.34 25.34 0 0 1-1.214-.94a28.157 28.157 0 0 1-2.853-2.698C5.218 16.876 3 13.637 3 10a9 9 0 0 1 18 0c0 3.637-2.218 6.877-4.262 9.112a28.145 28.145 0 0 1-3.796 3.44a16.794 16.794 0 0 1-.345.251l-.021.014l-.006.005l-.002.001l-.568.39ZM12 8a2 2 0 1 0 0 4a2 2 0 0 0 0-4Zm-4 2a4 4 0 1 1 8 0a4 4 0 0 1-8 0Z"
+            />
+          </svg>
+          <h3>Zentrale Lage</h3>
+          <p>
+            Erkunden Sie die Dresdner Innenstadt zu Fuß.<br />Alternativ nutzen
+            sie die gute Verkehrsanbindung direkt vor der Haustür.
+          </p>
+        </section>
+        <section>
+          <svg width="100%" height="100%" viewBox="0 0 24 24">
+            <path
+              fill="#0d9488"
+              d="M22 9.67a1 1 0 0 0-.86-.67l-5.69-.83L12.9 3a1 1 0 0 0-1.8 0L8.55 8.16L2.86 9a1 1 0 0 0-.81.68a1 1 0 0 0 .25 1l4.13 4l-1 5.68a1 1 0 0 0 .4 1a1 1 0 0 0 1.05.07L12 18.76l5.1 2.68a.93.93 0 0 0 .46.12a1 1 0 0 0 .59-.19a1 1 0 0 0 .4-1l-1-5.68l4.13-4A1 1 0 0 0 22 9.67Zm-6.15 4a1 1 0 0 0-.29.89l.72 4.19l-3.76-2a1 1 0 0 0-.94 0l-3.76 2l.72-4.19a1 1 0 0 0-.29-.89l-3-3l4.21-.61a1 1 0 0 0 .76-.55L12 5.7l1.88 3.82a1 1 0 0 0 .76.55l4.21.61Z"
+            />
+          </svg>
+          <h3>Erstklassiger Komfort</h3>
+          <p>
+            Unser Apartment bietet Ihnen allen Komfort für einen perfekten
+            Aufenthalt.
+          </p>
+        </section>
+      </div>
+	  <div class="reviews">
+		<h2>Was unsere Gäste sagen</h2>
+		<section>
+			<blockquote>
+			"Die Lage war für uns toll, der Ausblick schön, die Wohnung sehr sauber, die Betten sehr bequem. Es war alles da, was man braucht."
+			</blockquote>
+			<address>- Sandra</address>
+		</section>
+		<section>
+			<blockquote>
+			"Sehr schön gelegen direkt an der Elbe. Die Ausstattung lässt keine Wünsche offen. Sehr netter Gastgeber, wir kommen gerne wieder."
+			</blockquote>
+			<address>- Matthäus</address>
+		</section>
+	  </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
 </html>
