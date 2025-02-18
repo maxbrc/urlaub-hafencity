@@ -73,6 +73,11 @@ a {
     color: inherit;
 }
 
+main {
+    max-width: 1920px; /* soon to be improved */
+    align-self: center;
+}
+
 main img {
     width: 100%;
 }
@@ -110,10 +115,6 @@ header {
     flex-wrap: wrap;
 }
 
-header section {
-    flex-grow: 1;
-}
-
 #dropdownImg {
     width: auto;
     height: 2em;
@@ -129,6 +130,11 @@ h1 {
 }
 
 h2 {
+    font-size: 1.5em;
+    margin: 1em 0.5em;
+}
+
+.imgWrapper h2, .reviews h2 {
     font-size: 2em;
     font-weight: 600;
     margin: 0 0 1rem 0;
@@ -185,6 +191,7 @@ h3 {
 
 #dropdown a:hover {
     cursor: pointer;
+    color: #0d9488;
 }
 
 .imgWrapper p {
@@ -203,7 +210,6 @@ main section {
     align-items: center;
     justify-content: center;
 }
-
 
 main section:last-of-type {
     margin: 1.5em 0 0;
@@ -277,17 +283,24 @@ main section:last-of-type {
     background-color: #003b95;
     margin: 1.5rem 0 0;
     border-radius: 100em;
+    transition: all 0.2s ease;
+}
+
+.booking:hover {
+    filter: brightness(110%);
+    transition: all 0.2s ease;
 }
 
 .reviews {
     padding: 3em 1em;
     text-align: left;
-    background-color: #0d9488;
+    background-color: #1a535c;
     color: white;
 }
 
 .reviews h2 {
     margin: 0 0 1em;
+    text-align: center;
 }
 
 .reviews section {
@@ -309,14 +322,42 @@ address {
     font-size: 1.05rem;
 }
 
+footer {
+    background-color: #1f2937;
+    padding: 1em 1em 2em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer h3 {
+    margin: 1em 0;
+}
+
+.contactInfo {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0.5em;
+}
+
+.contactInfo svg {
+    width: 1.5em;
+    margin: 0 0.5em 0 0;
+}
+
 @media (min-width: 1000px) {
     h1 {
         flex-basis: 50%;
     }
 
-    h2 {
-        font-size: 1.75em;
+    .imgWrapper h2, .reviews h2 {
+        font-size: 2.5em;
         margin: 0 0 1.5rem 0;
+    }
+
+    .imgWrapper p {
+        font-size: 1.2em;
     }
 
     header {
@@ -344,63 +385,54 @@ address {
 
     #dropdown a {
         margin: 0;
-        padding: 0.5em 1em;
-        border-radius: 0.3em;
+        padding: 0.5em 1em !important; /* For last-of-type */
         border-bottom: none;
-        color: grey;
         transition: all 0.4s ease;
-    }
-
-    #dropdown a:last-of-type {
-        padding: 0.5em 1em;
-    }
-
-    #dropdown a:hover {
-        background-color: rgb(243, 243, 243);
-        transition: all 0.4s ease;
-    }
-
-    #dropdown a.active:hover {
-        background-color: #2194db;
-        color: white;
-    }
-
-    #dropdown a:active {
-        background-color: rgb(226, 226, 226);
-        transition: all 0.4s ease;
-    }
-
-    #dropdown a.active:active /* ;) */ {
-        background-color: #1a7fbe;
-        color: white;
     }
 
     .features {
         display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 1em;
+        margin: 1em 0;
+    }
+
+    .features section {
+        margin: 0 !important; /* For last-of-type */
+        flex: 1 1 0;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
         gap: 1em;
     }
 
-    main section {
-        flex-grow: 1;
-        margin: 0.5em 0 !important;
+    .reviews h2 {
+        flex-basis: 100%;
     }
 
-    main p {
-        margin: 1em 0;
+    .reviews section {
+        margin: 0 !important;
+        flex: 1 1 0;
+        
     }
 
-    .booking {
-        margin: 1em 0;
+    footer {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
     }
 
-    main > h3 {
-        margin: 0;
-    }
 }
 
 @media (min-width: 1300px) {
     #dropdown {
-        flex-basis: 40%;
-        max-width: 800px;
+        flex-basis: 30%;
     }
 }

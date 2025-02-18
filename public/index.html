@@ -16,6 +16,7 @@
     />
     <link rel="stylesheet" href="app.css" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+	<!--Todo: Fix h2 styling, properly implement greater than full hd screens-->
   </head>
   <body>
     <noscript>
@@ -32,7 +33,7 @@
           <a href="lage/"><li>Lage</li></a>
           <a href="dokumente/"><li>Dokumente</li></a>
           <a href="faq/"><li>FAQ</li></a>
-          <a href="kontakt/"><li>Kontakt</li></a>
+		  <a href="impressum/"><li>Impressum</li></a>
         </ul>
       </nav>
     </header>
@@ -45,35 +46,34 @@
             Erleben sie die Dresdner Innenstadt von ihrer schönsten Seite in
             unserem stilvolen Apartment.
           </p>
-			<a class="booking" href="https://www.booking.com/Share-Zs3JL0" target="_blank">
-			  Jetzt buchen
-			</a>
+          <a
+            class="booking"
+            href="https://www.booking.com/Share-Zs3JL0"
+            target="_blank"
+          >
+            Jetzt buchen
+          </a>
         </div>
       </div>
       <div class="features">
-		<section>
-			<svg
-			  xmlns="http://www.w3.org/2000/svg"
-			  width="100%"
-			  height="100%"
-			  viewBox="0 0 24 24"
-			>
-			  <g fill="none" stroke="#0d9488" stroke-width="1.5">
-				<path stroke-linecap="round" d="M19 20v-1.5M5 20v-1.5" />
-				<path
-				  d="M2 15c0-.932 0-1.398.152-1.765a2 2 0 0 1 1.083-1.083C3.602 12 4.068 12 5 12h14c.932 0 1.398 0 1.765.152a2 2 0 0 1 1.083 1.083C22 13.602 22 14.068 22 15c0 .932 0 1.398-.152 1.765a2 2 0 0 1-1.083 1.083C20.398 18 19.932 18 19 18H5c-.932 0-1.398 0-1.765-.152a2 2 0 0 1-1.083-1.083C2 16.398 2 15.932 2 15Zm19-3c0-3.771 0-5.657-1.172-6.828C18.657 4 16.771 4 13 4h-2C7.229 4 5.343 4 4.172 5.172C3 6.343 3 8.229 3 12"
-				/>
-				<path
-				  d="M18.5 12v-1.5c0-1.886 0-2.828-.586-3.414C17.328 6.5 16.386 6.5 14.5 6.5h-5c-1.886 0-2.828 0-3.414.586C5.5 7.672 5.5 8.614 5.5 10.5V12M12 7v5"
-				/>
-			  </g>
-			</svg>
-			<h3>Voll Ausgestattet</h3>
-			<p>
-			  Mit einer voll ausgetatteten Küche, einem Fernseher, kostenfreiem
-			  WLAN, einer Dusche und vielem Mehr sind sie perfekt ausgetattet
-			</p>
-		  </section>
+        <section>
+          <svg width="100%" height="100%" viewBox="0 0 24 24">
+            <g fill="none" stroke="#0d9488" stroke-width="1.5">
+              <path
+                d="M6.886 18h9.647c.617 0 .926 0 1.202-.039c1.126-.158 2.1-.785 2.624-1.69c.129-.222.226-.483.421-1.006l1.12-3C22.315 11.15 21.387 10 20.073 10c-.81 0-1.534.453-1.81 1.134l-1 2.466c-.195.478-.292.717-.476.883c-.1.091-.219.165-.349.219c-.238.098-.522.098-1.091.098h-6.98c-.293 0-.44 0-.57-.027a1.2 1.2 0 0 1-.74-.463c-.072-.1-.122-.224-.222-.47l-1.098-2.706c-.276-.68-1-1.134-1.81-1.134c-1.314 0-2.242 1.15-1.827 2.264l1.303 3.493l.039.102c.497 1.265 1.823 2.12 3.323 2.14l.121.001Z"
+              />
+              <path
+                d="M6 12V8.571c0-2.155 0-3.232.703-3.902C7.406 4 8.537 4 10.8 4h2.4c2.263 0 3.394 0 4.097.67c.703.668.703 1.745.703 3.9V12"
+              />
+              <path stroke-linecap="round" d="M18 20v-2M6 20v-1.333" />
+            </g>
+          </svg>
+          <h3>Voll Ausgestattet</h3>
+          <p>
+            Mit einer voll ausgetatteten Küche, einem Fernseher, kostenfreiem
+            WLAN, einer Dusche und vielem mehr, sind sie perfekt ausgetattet.
+          </p>
+        </section>
         <section>
           <svg width="100%" height="100%" viewBox="0 0 24 24">
             <path
@@ -101,22 +101,67 @@
           </p>
         </section>
       </div>
-	  <div class="reviews">
-		<h2>Was unsere Gäste sagen</h2>
-		<section>
-			<blockquote>
-			"Die Lage war für uns toll, der Ausblick schön, die Wohnung sehr sauber, die Betten sehr bequem. Es war alles da, was man braucht."
-			</blockquote>
-			<address>- Sandra</address>
-		</section>
-		<section>
-			<blockquote>
-			"Sehr schön gelegen direkt an der Elbe. Die Ausstattung lässt keine Wünsche offen. Sehr netter Gastgeber, wir kommen gerne wieder."
-			</blockquote>
-			<address>- Matthäus</address>
-		</section>
-	  </div>
+      <div class="reviews">
+        <h2>Was unsere Gäste sagen</h2>
+        <section>
+          <blockquote>
+            "Die Lage war für uns toll, der Ausblick schön, die Wohnung sehr
+            sauber, die Betten sehr bequem. Es war alles da, was man braucht."
+          </blockquote>
+          <address>- Sandra</address>
+        </section>
+        <section>
+          <blockquote>
+            "Sehr schön gelegen direkt an der Elbe. Die Ausstattung lässt keine
+            Wünsche offen. Sehr netter Gastgeber, wir kommen gerne wieder."
+          </blockquote>
+          <address>- Matthäus</address>
+        </section>
+      </div>
     </main>
+    <footer>
+      <section>
+        <h3>Kontakt</h3>
+        <div class="contactInfo">
+          <svg width="100%" height="100%" viewBox="0 0 24 24">
+            <path
+              fill="none"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"
+            />
+          </svg>
+          <span>+49 178 8875353</span>
+        </div>
+        <div class="contactInfo">
+          <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"
+              />
+              <path d="m3 7l9 6l9-6" />
+            </g>
+          </svg>
+		  <span>anja.bruch@googlemail.com</span>
+        </div>
+      </section>
+	  <section>
+		<h3>Schnelllinks</h3>
+		<span><a href="impressum" target="_blank">Impressum</a></span>
+	  </section>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>
