@@ -104,7 +104,7 @@ main img {
     top: 0;
     left: 0;
     z-index: 1;
-    margin: 0 4rem 0 1rem;
+    margin: 0 4rem 40px 1rem;
     color: white;
 }
 
@@ -463,7 +463,6 @@ iframe {
         align-items: flex-start;
         justify-content: space-evenly;
     }
-
 }
 
 @media (min-width: 1300px) {
