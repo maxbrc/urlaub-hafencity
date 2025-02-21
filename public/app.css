@@ -76,6 +76,7 @@ a {
 main {
     max-width: 1920px; /* soon to be improved */
     padding: 0 1em;
+    flex-grow: 1;
 }
 
 main img {
@@ -91,7 +92,7 @@ main img {
     margin: 0 -1em;
 }
 
-.imgWrapper img {
+.imgWrapper > img {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -105,6 +106,27 @@ main img {
     z-index: 1;
     margin: 0 4rem 0 1rem;
     color: white;
+}
+
+.awards {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+}
+
+.awards img {
+    max-width: 350px;
+}
+
+.awards div {
+    display: none;
+    flex-grow: 1;
+    background-color: #003896;
+    height: 82.2px;
 }
 
 header {
@@ -353,6 +375,12 @@ iframe {
     height: 50dvh;
 }
 
+@media (min-width: 355px) {
+    .awards div {
+        display: block;
+    }
+}
+
 @media (min-width: 1000px) {
     h1 {
         flex-basis: 50%;
@@ -403,7 +431,7 @@ iframe {
         flex-direction: row;
         flex-wrap: nowrap;
         gap: 1em;
-        margin: 1em 0;
+        margin: 2em 1em;
     }
 
     .features section {
